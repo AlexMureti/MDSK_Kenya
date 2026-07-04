@@ -1,0 +1,12 @@
+.agents/
+.codex/
+_ASSET_DROPZONE/
+_PROJECT_BRIEF.md
+design-system/
+brand/DESIGN_SYSTEM.md
+tools/node_modules/
+tools/emblem-preview.png
+assets/preview-server*.log
+*.log
+.DS_Store
+Thumbs.db

@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Men with Disabilities Society of Kenya advances rights, inclusion, health, livelihoods, leadership, and dignity for boys and men with disabilities and their caregivers across Kenya." />
+  <title>MDSK - Men with Disabilities Society of Kenya</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;600;700&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/mdsk.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <div class="utility" aria-label="Site utilities">
+    <div class="container utility-inner">
+      <span>A Mission of Stability</span>
+      <div class="utility-links">
+        <a href="#swahili">Kiswahili</a>
+        <a href="#easy-read">Easy Read</a>
+        <button type="button" id="easyToggle" aria-pressed="false">Readable</button>
+        <button type="button" id="quickExit" class="quick-exit">Quick exit</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="brand-band" aria-hidden="true"><span></span><span></span><span></span><span></span></div>
+
+  <header class="site-header">
+    <div class="container nav-row">
+      <a class="brand" href="index.html" aria-label="MDSK home">
+        <img src="brand/logo/mdsk-emblem.svg" width="58" height="54" alt="" />
+        <span class="brand-mark">
+          <strong>MDSK</strong>
+          <span>Men with Disabilities Society of Kenya</span>
+        </span>
+      </a>
+
+      <button class="icon-button menu-button" id="menuToggle" type="button" aria-expanded="false" aria-controls="primaryNav" aria-label="Open menu">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16" /></svg>
+      </button>
+
+      <nav class="primary-nav" id="primaryNav" aria-label="Primary navigation">
+        <ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="#guide">Guide</a></li>
+          <li><a href="programs.html">Programs</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="partners.html">Partners</a></li>
+          <li><a href="donate.html">Donate</a></li>
+          <li><a href="accessibility.html">Access</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="a11y-controls" role="group" aria-label="Accessibility display controls">
+        <button class="icon-button" type="button" id="fontDown" aria-label="Decrease text size" title="Decrease text size">A-</button>
+        <button class="icon-button" type="button" id="fontUp" aria-label="Increase text size" title="Increase text size">A+</button>
+        <button class="icon-button" type="button" id="contrastToggle" aria-label="Toggle high contrast" aria-pressed="false" title="High contrast">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9" /><path d="M12 3v18" /></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <span id="top" aria-hidden="true"></span>
+
+    <section class="hero" aria-labelledby="hero-title">
+      <picture>
+        <source srcset="assets/optimized/boardroom-hats-1400.webp 1400w, assets/optimized/boardroom-hats-800.webp 800w" type="image/webp" sizes="100vw" />
+        <img src="_ASSET_DROPZONE/04_PROGRAMS_in_action/boardroom-meeting-members-white-cane.jpeg" width="1733" height="1153" alt="MDSK members in branded hats meeting around a boardroom table" fetchpriority="high" />
+      </picture>
+
+      <div class="container hero-content">
+        <span class="eyebrow">Disability rights, dignity, inclusion</span>
+        <h1 id="hero-title">Men with Disabilities Society of Kenya</h1>
+        <p class="hero-copy">A national membership organization advancing rights, health, livelihoods, leadership, and dignity for boys and men with disabilities and their caregivers across Kenya.</p>
+        <div class="hero-actions" aria-label="Primary actions">
+          <a class="button gold" href="donate.html">
+            Support the mission
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14" /><path d="m13 6 6 6-6 6" /></svg>
+          </a>
+          <a class="button secondary" href="#guide">
+            Ask MDSK Guide
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14" /><path d="m13 6 6 6-6 6" /></svg>
+          </a>
+          <a class="button secondary" href="programs.html">
+            See the work
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14" /><path d="m13 6 6 6-6 6" /></svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="hero-proof" aria-label="MDSK proof points">
+      <div class="proof-item">
+        <strong>Kenya-wide</strong>
+        <span>National membership and advocacy platform</span>
+      </div>
+      <div class="proof-item">
+        <strong>KSL visible</strong>
+        <span>Sign-language access present at major events</span>
+      </div>
+      <div class="proof-item">
+        <strong>6 pillars</strong>
+        <span>Rights, health, education, livelihoods, leadership, partnerships</span>
+      </div>
+      <div class="proof-item">
+        <strong>Real systems</strong>
+        <span>Government, OPD, CSO, health, and media engagement</span>
+      </div>
+    </section>
+
+    <section id="guide" class="section guide-band" aria-labelledby="guide-title">
+      <div class="container guide-layout">
+        <div class="guide-copy">
+          <span class="eyebrow">AI-ready access navigator</span>
+          <h2 id="guide-title">Ask once. Find the right MDSK pathway.</h2>
+          <p>The MDSK Guide helps visitors choose the next step without digging through pages. It answers common questions locally today and can connect to a reviewed AI endpoint when MDSK is ready.</p>
+          <div class="guide-privacy">
+            <strong>Privacy-first by design</strong>
+            <p>No account, no tracking, no sensitive form capture. Questions about GBV, SRHR, HIV, mental health, or safety stay in the local guide until a reviewed support backend exists.</p>
+          </div>
+          <div class="guide-prompts" aria-label="Common MDSK guide paths">
+            <button class="guide-prompt" type="button" data-guide-prompt="I want to join MDSK">I want to join MDSK</button>
+            <button class="guide-prompt" type="button" data-guide-prompt="How do I donate by M-Pesa?">Donate by M-Pesa</button>
+            <button class="guide-prompt" type="button" data-guide-prompt="I am a caregiver and need support">Caregiver support</button>
+            <button class="guide-prompt" type="button" data-guide-prompt="My organization wants to partner with MDSK">Partner with MDSK</button>
+          </div>
+        </div>
+
+        <section class="guide-panel" aria-label="MDSK Guide chat">
+          <div class="guide-panel-head">
+            <div class="guide-panel-title">
+              <img src="brand/logo/mdsk-emblem.svg" width="44" height="40" alt="" />
+              <div>
+                <strong>MDSK Guide</strong>
+                <span>Local answers, future AI endpoint ready</span>
+              </div>
+            </div>
+            <span class="guide-status">Private mode</span>
+          </div>
+          <div class="guide-messages" id="guideMessages" aria-live="polite" aria-relevant="additions">
+            <div class="guide-message bot">Karibu. I can help with membership, donations, caregiver support, events, partnerships, accessibility, and MDSK contact details. I am not an emergency, medical, or legal service.</div>
+          </div>
+          <div class="guide-quick" aria-label="Quick questions">
+            <button class="guide-chip" type="button" data-guide-prompt="What does MDSK do?">What does MDSK do?</button>
+            <button class="guide-chip" type="button" data-guide-prompt="How can I reach MDSK?">Contact</button>
+            <button class="guide-chip" type="button" data-guide-prompt="Tell me about KSL and Easy Read access">Access features</button>
+            <button class="guide-chip" type="button" data-guide-prompt="I need GBV, SRHR, HIV, or mental health support">Sensitive support</button>
+          </div>
+          <form class="guide-form" id="guideForm" aria-label="MDSK Guide form">
+            <label class="sr-only" for="guideInput">Ask MDSK Guide</label>
+            <input class="guide-input" id="guideInput" type="text" autocomplete="off" placeholder="Ask about joining, donating, access, events, or support" />
+            <button class="guide-send" type="submit" aria-label="Send question">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14" /><path d="m13 6 6 6-6 6" /></svg>
+            </button>
+          </form>
+        </section>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="container split">
+        <div class="copy-stack">
+          <span class="eyebrow">Who we are</span>
+          <h2>A movement built by the people closest to the barriers.</h2>
+          <p>MDSK advances an inclusive, enabling society where boys and men with disabilities and their caregivers can participate fully, access equal opportunities, exercise their rights, and build independent, sustainable livelihoods.</p>
+          <p>The organization connects community-based support with national advocacy across health, justice, education, employment, caregiving, accessibility, and leadership.</p>
+        </div>
+        <aside class="statement" aria-label="MDSK vision and mission">
+          <strong>Vision</strong>
+          <p>A society where boys and men with disabilities and their caregivers live with dignity, equality, inclusion, and full participation in all spheres of life.</p>
+          <strong>Mission</strong>
+          <p>To empower boys and men with disabilities and their caregivers through advocacy, capacity building, inclusive education, economic empowerment, leadership development, partnerships, and inclusive services.</p>
+        </aside>
+      </div>
+
+      <div class="container value-grid" aria-label="Core values">
+        <div class="value"><span>Integrity</span><p>Trustworthy advocacy grounded in the lived experience of members.</p></div>
+        <div class="value"><span>Respect</span><p>Dignity first, with no inspiration framing and no tokenism.</p></div>
+        <div class="value"><span>Accountability</span><p>Clear commitments to members, partners, caregivers, and communities.</p></div>
+        <div class="value"><span>Inclusivity</span><p>Participation across disability, language, location, and income barriers.</p></div>
+        <div class="value"><span>Collaboration</span><p>Systems change through government, OPDs, CSOs, media, and private partners.</p></div>
+        <div class="value"><span>Excellence</span><p>Accessible work delivered with discipline, care, and high standards.</p></div>
+      </div>
+    </section>
+
+    <section id="work" class="section work-band">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">What we advance</span>
+          <h2>Six strategic objectives, one rights-based mission.</h2>
+        </div>
+        <div class="work-grid">
+          <article class="work-card" style="--accent: var(--navy)">
+            <span class="number">1</span>
+            <h3>Human rights and inclusion</h3>
+            <p>Protecting rights, reducing stigma, combating violence, and making public systems disability-responsive.</p>
+          </article>
+          <article class="work-card" style="--accent: var(--green)">
+            <span class="number">2</span>
+            <h3>Health and psychosocial wellbeing</h3>
+            <p>SRHR, HIV response, mental health, referral pathways, and accessible healthcare engagement.</p>
+          </article>
+          <article class="work-card" style="--accent: var(--gold)">
+            <span class="number">3</span>
+            <h3>Inclusive education and skills</h3>
+            <p>Equitable learning, digital skills, vocational pathways, and access to opportunity.</p>
+          </article>
+          <article class="work-card" style="--accent: var(--green)">
+            <span class="number">4</span>
+            <h3>Economic empowerment</h3>
+            <p>Entrepreneurship, financial inclusion, workplace reintegration, and sustainable livelihoods.</p>
+          </article>
+          <article class="work-card" style="--accent: var(--red)">
+            <span class="number">5</span>
+            <h3>Leadership and governance</h3>
+            <p>Leadership development, civic participation, and representation in decision-making spaces.</p>
+          </article>
+          <article class="work-card" style="--accent: var(--black)">
+            <span class="number">6</span>
+            <h3>Partnerships and networking</h3>
+            <p>Coordinated action with government, OPDs, CSOs, development partners, academia, and media.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="access" class="section">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Access is part of the work</span>
+          <h2>Built for people who are often left out of digital systems.</h2>
+          <p>MDSK's public presence should be fast, plain, keyboard-complete, readable, and respectful of sensitive topics such as GBV, SRHR, HIV, and psychosocial wellbeing.</p>
+        </div>
+        <div class="access-grid">
+          <article class="access-card">
+            <h3>Kenyan Sign Language</h3>
+            <p>Key pages are structured to support KSL video summaries as soon as clips are supplied.</p>
+          </article>
+          <article class="access-card">
+            <h3>Easy Read</h3>
+            <p>Plain-language content gives visitors a simpler route into the same mission.</p>
+          </article>
+          <article class="access-card">
+            <h3>Kiswahili</h3>
+            <p>The build is prepared for full English and Kiswahili content, not an afterthought.</p>
+          </article>
+          <article class="access-card">
+            <h3>Quick exit</h3>
+            <p>Sensitive advocacy pathways include a visible exit control and minimal data collection.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="impact" class="section work-band">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Work in action</span>
+          <h2>Authentic documentary proof, not stock imagery.</h2>
+        </div>
+        <div class="media-grid">
+          <figure class="feature-photo">
+            <picture>
+              <source srcset="assets/optimized/hiv-ksl-podium-1100.webp" type="image/webp" />
+              <img src="_ASSET_DROPZONE/04_PROGRAMS_in_action/hiv-response-podium-with-sign-interpreter.jpeg" width="1733" height="1153" loading="lazy" alt="A speaker addresses a disability-inclusive health and HIV response event while a Kenyan Sign Language interpreter signs beside the podium" />
+            </picture>
+            <figcaption>Health and HIV-response advocacy with Kenyan Sign Language access visible in the room.</figcaption>
+          </figure>
+          <div class="photo-stack">
+            <figure class="photo-card">
+              <picture>
+                <source srcset="assets/optimized/chairperson-media-900.webp" type="image/webp" />
+                <img src="_ASSET_DROPZONE/04_PROGRAMS_in_action/chairperson-media-scrum-tv47.jpeg" width="1733" height="1153" loading="lazy" alt="Benson Isaboke speaks to journalists during a media interview" />
+              </picture>
+              <figcaption>Media engagement that brings disability inclusion into the national conversation.</figcaption>
+            </figure>
+            <figure class="photo-card portrait-card">
+              <picture>
+                <source srcset="assets/optimized/family-inclusion-760.webp" type="image/webp" />
+                <img src="_ASSET_DROPZONE/04_PROGRAMS_in_action/diaper-campaign-family-inclusion-team.jpeg" width="1067" height="1600" loading="lazy" alt="Family Inclusion campaign team members standing together in branded shirts in Nairobi" />
+              </picture>
+              <figcaption>Family Inclusion campaign work around caregiving, dignity, and practical support.</figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section tight">
+      <div class="container event">
+        <picture>
+          <source srcset="assets/optimized/members-families-1000.webp" type="image/webp" />
+          <img src="_ASSET_DROPZONE/04_PROGRAMS_in_action/group-photo-members-and-families.jpeg" width="1600" height="1064" loading="lazy" alt="MDSK members, families, and supporters gathered for a group photograph" />
+        </picture>
+        <div class="event-details">
+          <span class="eyebrow">Signature platform</span>
+          <h2>National Conference 2025</h2>
+          <p>The National Conference brought rights, dignity, inclusion, caregivers, health, leadership, and partner coordination into one public platform.</p>
+          <ul class="detail-list">
+            <li><strong>Theme</strong><span>Advancing Rights, Dignity and Inclusion of Men and Boys with Disabilities and their Caregivers</span></li>
+            <li><strong>Dates</strong><span>17-19 November 2025</span></li>
+            <li><strong>Venues</strong><span>AFRALTI and KISE, Nairobi</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container leadership">
+        <figure class="leader-card">
+          <picture>
+            <source srcset="assets/optimized/benson-isaboke-redhat-720.webp" type="image/webp" />
+            <img src="_ASSET_DROPZONE/03_LEADERSHIP_and_TEAM/chairperson-benson-isaboke-portrait-redhat.jpeg" width="720" height="720" loading="lazy" alt="Portrait of Benson Isaboke wearing a red hat and MDSK shirt" />
+          </picture>
+          <div>
+            <h3>Benson Isaboke</h3>
+            <p>Chairperson, MDSK</p>
+          </div>
+        </figure>
+        <div class="copy-stack">
+          <span class="eyebrow">Leadership</span>
+          <h2>Led by members who understand access, stigma, care, and systems from the inside.</h2>
+          <p>The visual identity stays true to the hats because they are not decoration. In the available MDSK photography, the hats operate as presence, solidarity, and recognition across boardrooms, media spaces, health forums, and community events.</p>
+          <p>That is the design logic for this pass: the emblem remains intact, the hats remain meaningful, and the website treats people as civic actors rather than charity subjects.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="partners" class="section work-band">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Partners and networks</span>
+          <h2>Inclusion needs institutions moving together.</h2>
+          <p>MDSK works across public agencies, OPDs, health partners, civil society, development partners, media, and community networks.</p>
+        </div>
+        <ul class="partner-list" aria-label="Partners and networks">
+          <li>NCPWD</li>
+          <li>NSDCC</li>
+          <li>Ministry of Health</li>
+          <li>CBM Global</li>
+          <li>Kenya Society for the Blind</li>
+          <li>Riziki Source</li>
+          <li>British High Commission</li>
+          <li>CDPOK</li>
+          <li>NGEC</li>
+          <li>UDPK</li>
+          <li>Sight of Relief</li>
+          <li>Nairobi City County</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="involved" class="section">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Get involved</span>
+          <h2>Support rights, access, and dignity in practical ways.</h2>
+        </div>
+        <div class="involved-grid">
+          <article class="involved-card">
+            <h3>Donate</h3>
+            <p>Fund advocacy, access, caregiving support, outreach, and member-centered programs.</p>
+            <div class="donation-box" aria-label="Donation details">
+              <span>M-Pesa Paybill</span>
+              <strong>522533</strong>
+              <span>Account</span>
+              <strong>1344899730</strong>
+            </div>
+          </article>
+          <article class="involved-card">
+            <h3>Partner</h3>
+            <p>Bring institutional reach, technical expertise, funding, services, media access, or inclusive employment pathways.</p>
+            <a class="button primary" href="partners.html">
+              Start a partnership
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14" /><path d="m13 6 6 6-6 6" /></svg>
+            </a>
+          </article>
+          <article class="involved-card">
+            <h3>Join the movement</h3>
+            <p>Members, caregivers, allies, and volunteers can help widen access and make inclusion visible in everyday systems.</p>
+            <a class="button secondary" href="contact.html">
+              Contact MDSK
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14" /><path d="m13 6 6 6-6 6" /></svg>
+            </a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="swahili" class="section swahili">
+      <div class="container split">
+        <div class="copy-stack">
+          <span class="eyebrow">Kiswahili</span>
+          <h2>Ujumbe mfupi kwa Kiswahili.</h2>
+        </div>
+        <div class="copy-stack" lang="sw">
+          <p>MDSK ni shirika la kitaifa linalotetea haki, utu, afya, elimu, ajira, uongozi, na ushiriki wa wavulana na wanaume wenye ulemavu pamoja na walezi wao nchini Kenya.</p>
+          <p>Tovuti kamili itaandaliwa kwa Kiingereza na Kiswahili ili taarifa muhimu ziwafikie watu wengi zaidi.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="easy-read" class="section">
+      <div class="container easy-read">
+        <div class="copy-stack">
+          <span class="eyebrow">Easy Read</span>
+          <h2>The same mission in simpler language.</h2>
+        </div>
+        <ul>
+          <li>MDSK works for boys and men with disabilities in Kenya.</li>
+          <li>MDSK also supports caregivers and families.</li>
+          <li>MDSK speaks up for rights, health, safety, education, work, and leadership.</li>
+          <li>MDSK wants public services to be easier to enter, use, and trust.</li>
+          <li>You can support MDSK by donating, partnering, volunteering, or sharing the work.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact-band">
+      <div class="container contact-grid">
+        <div class="copy-stack">
+          <span class="eyebrow">Contact</span>
+          <h2>Reach MDSK directly.</h2>
+          <p>For partnerships, membership, media, donations, or program coordination, use the direct channels below.</p>
+          <div class="hero-actions">
+            <a class="button gold" href="mailto:info@menwdsocietyk.org">
+              Email MDSK
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14" /><path d="m13 6 6 6-6 6" /></svg>
+            </a>
+            <a class="button secondary" href="tel:+254739000171">
+              Call office
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14" /><path d="m13 6 6 6-6 6" /></svg>
+            </a>
+          </div>
+        </div>
+        <ul class="contact-list">
+          <li><strong>Office</strong><span>Kenbanco House, Moi Avenue, Nairobi<br />P.O. Box 56984-00200, Nairobi</span></li>
+          <li><strong>Email</strong><span><a href="mailto:info@menwdsocietyk.org">info@menwdsocietyk.org</a><br /><a href="mailto:menwdsocietyk@gmail.com">menwdsocietyk@gmail.com</a></span></li>
+          <li><strong>Phone</strong><span><a href="tel:+254739000171">+254 739 000 171</a><br /><a href="tel:+254782131112">+254 782 131 112</a><br /><a href="tel:+254736535796">+254 736 535 796</a></span></li>
+          <li><strong>Social</strong><span><a href="https://facebook.com/profile.php?id=61569322708590">Facebook</a><br /><a href="https://www.youtube.com/@menwdsocietyk">YouTube</a></span></li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <div class="footer-brand">
+          <img src="brand/logo/mdsk-emblem.svg" width="48" height="44" alt="" />
+          <strong>MDSK</strong>
+        </div>
+        <p>Men with Disabilities Society of Kenya. Rights, dignity, inclusion, and full participation.</p>
+      </div>
+      <div>
+        <p>&copy; <span id="year"></span> Men with Disabilities Society of Kenya. Built to prioritize accessibility, speed, consent, and dignity.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/mdsk.js"></script>
+</body>
+</html>
