@@ -88,10 +88,11 @@ function footer() {
 
 function pageHero(page) {
   const img = page.heroImage;
+  const imageClass = img.className ? ` class="${img.className}"` : "";
   return `<section class="page-hero" aria-labelledby="page-title">
       <picture>
         <source srcset="${img.webp}" type="image/webp" />
-        <img src="${img.fallback}" width="${img.width}" height="${img.height}" alt="${img.alt}" fetchpriority="high" />
+        <img${imageClass} src="${img.fallback}" width="${img.width}" height="${img.height}" alt="${img.alt}" fetchpriority="high" />
       </picture>
       <div class="container page-hero-content">
         <span class="eyebrow">${page.eyebrow}</span>
@@ -142,10 +143,11 @@ const pages = [
     intro: "MDSK is a national membership organization advancing dignity, inclusion, leadership, health, livelihoods, and equal participation for boys and men with disabilities and their caregivers across Kenya.",
     heroImage: {
       webp: "assets/optimized/boardroom-hats-1400.webp",
-      fallback: "_ASSET_DROPZONE/04_PROGRAMS_in_action/boardroom-meeting-members-white-cane.jpeg",
+      fallback: "assets/optimized/boardroom-hats-1400.webp",
       width: "1733",
       height: "1153",
-      alt: "MDSK members in branded hats meeting around a boardroom table"
+      alt: "MDSK members in branded hats meeting around a boardroom table",
+      className: "image-focus-boardroom"
     },
     actions: `${button("See programs", "programs.html", "gold")}${button("Contact MDSK", "contact.html", "secondary")}`,
     content: `<section class="section">
@@ -178,7 +180,7 @@ const pages = [
         <figure class="leader-card">
           <picture>
             <source srcset="assets/optimized/benson-isaboke-redhat-720.webp" type="image/webp" />
-            <img src="_ASSET_DROPZONE/03_LEADERSHIP_and_TEAM/chairperson-benson-isaboke-portrait-redhat.jpeg" width="720" height="720" loading="lazy" alt="Portrait of Benson Isaboke wearing a red hat and MDSK shirt" />
+            <img class="image-focus-face" src="assets/optimized/benson-isaboke-redhat-720.webp" width="720" height="720" loading="lazy" alt="Portrait of Benson Isaboke wearing a red hat and MDSK shirt" />
           </picture>
           <div>
             <h3>Benson Isaboke</h3>
@@ -204,10 +206,11 @@ const pages = [
     intro: "MDSK's work connects policy advocacy with practical support, member voice, health access, livelihoods, leadership, caregiver dignity, and institutional partnerships.",
     heroImage: {
       webp: "assets/optimized/hiv-ksl-podium-1100.webp",
-      fallback: "_ASSET_DROPZONE/04_PROGRAMS_in_action/hiv-response-podium-with-sign-interpreter.jpeg",
+      fallback: "assets/optimized/hiv-ksl-podium-1100.webp",
       width: "1733",
       height: "1153",
-      alt: "A speaker addresses a disability-inclusive health and HIV response event while a Kenyan Sign Language interpreter signs beside the podium"
+      alt: "A speaker addresses a disability-inclusive health and HIV response event while a Kenyan Sign Language interpreter signs beside the podium",
+      className: "image-focus-ksl"
     },
     actions: `${button("Partner on programs", "partners.html", "gold")}${button("Ask MDSK Guide", "index.html#guide", "secondary")}`,
     content: `<section class="section work-band">
@@ -249,10 +252,11 @@ const pages = [
     intro: "MDSK uses conferences, health forums, media spaces, walks, and partner convenings to make the realities of men and boys with disabilities visible in policy and public life.",
     heroImage: {
       webp: "assets/optimized/members-families-1000.webp",
-      fallback: "_ASSET_DROPZONE/04_PROGRAMS_in_action/group-photo-members-and-families.jpeg",
+      fallback: "assets/optimized/members-families-1000.webp",
       width: "1600",
       height: "1064",
-      alt: "MDSK members, families, and supporters gathered for a group photograph"
+      alt: "MDSK members, families, and supporters gathered for a group photograph",
+      className: "image-focus-group"
     },
     actions: `${button("Contact event team", "contact.html", "gold")}${button("Support the next platform", "donate.html", "secondary")}`,
     content: `<section class="section">
@@ -270,7 +274,7 @@ const pages = [
         <figure class="media-panel">
           <picture>
             <source srcset="assets/optimized/chairperson-media-900.webp" type="image/webp" />
-            <img src="_ASSET_DROPZONE/04_PROGRAMS_in_action/chairperson-media-scrum-tv47.jpeg" width="1733" height="1153" loading="lazy" alt="Benson Isaboke speaks to journalists during a media interview" />
+            <img class="image-focus-face" src="assets/optimized/chairperson-media-900.webp" width="1733" height="1153" loading="lazy" alt="Benson Isaboke speaks to journalists during a media interview" />
           </picture>
           <div><h3>Media as access infrastructure</h3><p>Press moments extend the conversation beyond the room and help normalize disability inclusion in national discourse.</p></div>
         </figure>
@@ -293,10 +297,11 @@ const pages = [
     intro: "MDSK works with public agencies, OPDs, civil society, development partners, health institutions, media, and private sector actors to turn inclusion from language into systems.",
     heroImage: {
       webp: "assets/optimized/kcm-disability-team-900.webp",
-      fallback: "_ASSET_DROPZONE/04_PROGRAMS_in_action/kcm-global-fund-disability-team.jpeg",
+      fallback: "assets/optimized/kcm-disability-team-900.webp",
       width: "1733",
       height: "1153",
-      alt: "KCM Disability Constituency team members gathered for a Global Fund disability inclusion engagement"
+      alt: "KCM Disability Constituency team members gathered for a Global Fund disability inclusion engagement",
+      className: "image-focus-group-top"
     },
     actions: `${button("Start a partnership", "mailto:info@menwdsocietyk.org", "gold")}${button("See programs", "programs.html", "secondary")}`,
     content: `<section class="section work-band">
@@ -329,11 +334,12 @@ const pages = [
     heading: "Fund dignity, access, and member-led advocacy.",
     intro: "Your support helps MDSK advance rights, caregiving dignity, health access, livelihoods, leadership, public education, and practical inclusion for men and boys with disabilities and their caregivers.",
     heroImage: {
-      webp: "assets/optimized/family-inclusion-760.webp",
-      fallback: "_ASSET_DROPZONE/04_PROGRAMS_in_action/diaper-campaign-family-inclusion-team.jpeg",
-      width: "1067",
-      height: "1600",
-      alt: "Family Inclusion campaign team members standing together in branded shirts in Nairobi"
+      webp: "assets/optimized/members-families-1000.webp",
+      fallback: "assets/optimized/members-families-1000.webp",
+      width: "1600",
+      height: "1064",
+      alt: "MDSK members, families, and supporters gathered for a group photograph",
+      className: "image-focus-group"
     },
     actions: `${button("Contact for receipts", "contact.html", "gold")}${button("Partner with MDSK", "partners.html", "secondary")}`,
     content: `<section class="section">
@@ -356,6 +362,13 @@ const pages = [
             <li><strong>Access costs</strong><span>KSL access, Easy Read material, transport support, assistive access, and accessible communication.</span></li>
             <li><strong>Skills and livelihoods</strong><span>Training, entrepreneurship, digital access, and inclusive employment pathways.</span></li>
           </ul>
+          <figure class="media-panel portrait-media">
+            <picture>
+              <source srcset="assets/optimized/family-inclusion-760.webp" type="image/webp" />
+              <img class="image-focus-portrait" src="assets/optimized/family-inclusion-760.webp" width="1067" height="1600" loading="lazy" alt="Family Inclusion campaign team members standing together in branded shirts in Nairobi" />
+            </picture>
+            <div><h3>Family Inclusion</h3><p>Caregiving, dignity supplies, and practical support remain visible without forcing a portrait image into a wide hero crop.</p></div>
+          </figure>
         </div>
       </div>
     </section>
@@ -376,10 +389,11 @@ const pages = [
     intro: "This site is designed for fast loading, keyboard use, readable content, high contrast, reduced motion, future KSL video summaries, Kiswahili architecture, and trauma-informed quick-exit patterns.",
     heroImage: {
       webp: "assets/optimized/hiv-cane-interpreter-900.webp",
-      fallback: "_ASSET_DROPZONE/04_PROGRAMS_in_action/hiv-response-speaker-cane-with-interpreter.jpeg",
+      fallback: "assets/optimized/hiv-cane-interpreter-900.webp",
       width: "1733",
       height: "1153",
-      alt: "A speaker using a cane addresses a health event while a Kenyan Sign Language interpreter signs nearby"
+      alt: "A speaker using a cane addresses a health event while a Kenyan Sign Language interpreter signs nearby",
+      className: "image-focus-ksl-left"
     },
     actions: `${button("Use MDSK Guide", "index.html#guide", "gold")}${button("Report an access issue", "contact.html", "secondary")}`,
     content: `<section class="section">
@@ -414,10 +428,11 @@ const pages = [
     intro: "For membership, partnerships, donations, media, events, accessibility, caregiver support, or program coordination, use the direct channels below.",
     heroImage: {
       webp: "assets/optimized/chairperson-media-900.webp",
-      fallback: "_ASSET_DROPZONE/04_PROGRAMS_in_action/chairperson-media-scrum-tv47.jpeg",
+      fallback: "assets/optimized/chairperson-media-900.webp",
       width: "1733",
       height: "1153",
-      alt: "Benson Isaboke speaks to journalists during a media interview"
+      alt: "Benson Isaboke speaks to journalists during a media interview",
+      className: "image-focus-face"
     },
     actions: `${button("Email MDSK", "mailto:info@menwdsocietyk.org", "gold")}${button("Call office", "tel:+254739000171", "secondary")}`,
     content: `<section class="section">

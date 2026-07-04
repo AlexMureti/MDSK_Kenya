@@ -350,9 +350,12 @@ body.hc .utility {
 }
 
 .brand img {
-  width: 70px;
-  height: 64px;
+  width: 64px;
+  height: auto;
+  max-height: 64px;
+  aspect-ratio: 320 / 300;
   object-fit: contain;
+  flex: 0 0 auto;
 }
 
 .brand-mark {
@@ -472,7 +475,7 @@ body.hc .utility {
 
 .hero picture img {
   object-fit: cover;
-  object-position: center center;
+  object-position: 54% 42%;
 }
 
 .hero::before {
@@ -536,7 +539,35 @@ body.hc .utility {
 
 .page-hero picture img {
   object-fit: cover;
-  object-position: center center;
+  object-position: 54% 40%;
+}
+
+:is(.hero, .page-hero, .feature-photo, .photo-card, .event, .media-panel, .leader-card) img.image-focus-boardroom {
+  object-position: 56% 42%;
+}
+
+:is(.hero, .page-hero, .feature-photo, .photo-card, .event, .media-panel, .leader-card) img.image-focus-ksl {
+  object-position: 38% 42%;
+}
+
+:is(.hero, .page-hero, .feature-photo, .photo-card, .event, .media-panel, .leader-card) img.image-focus-ksl-left {
+  object-position: 34% 42%;
+}
+
+:is(.hero, .page-hero, .feature-photo, .photo-card, .event, .media-panel, .leader-card) img.image-focus-group {
+  object-position: 50% 30%;
+}
+
+:is(.hero, .page-hero, .feature-photo, .photo-card, .event, .media-panel, .leader-card) img.image-focus-group-top {
+  object-position: 50% 26%;
+}
+
+:is(.hero, .page-hero, .feature-photo, .photo-card, .event, .media-panel, .leader-card) img.image-focus-face {
+  object-position: 50% 34%;
+}
+
+:is(.hero, .page-hero, .feature-photo, .photo-card, .event, .media-panel, .leader-card) img.image-focus-portrait {
+  object-position: 50% 38%;
 }
 
 .page-hero::before {
@@ -703,6 +734,10 @@ body.hc .utility {
 }
 
 .media-panel .portrait {
+  aspect-ratio: 4 / 5;
+}
+
+.portrait-media img {
   aspect-ratio: 4 / 5;
 }
 
@@ -879,7 +914,9 @@ body.hc .utility {
 
 .guide-panel-title img {
   width: 44px;
-  height: 40px;
+  height: auto;
+  max-height: 44px;
+  aspect-ratio: 320 / 300;
   object-fit: contain;
   flex: 0 0 auto;
 }
@@ -1454,7 +1491,9 @@ figure {
 
 .footer-brand img {
   width: 48px;
-  height: 44px;
+  height: auto;
+  max-height: 48px;
+  aspect-ratio: 320 / 300;
   object-fit: contain;
   padding: 4px;
   border-radius: 8px;
@@ -1583,8 +1622,8 @@ figure {
   }
 
   .brand img {
-    width: 50px;
-    height: 48px;
+    width: 48px;
+    max-height: 48px;
   }
 
   .brand-mark span {
