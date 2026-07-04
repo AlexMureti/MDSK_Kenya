@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 300" role="img" aria-label="Men With Disabilities Society of Kenya emblem">
+  <title>MDSK emblem</title>
+
+  <g transform="translate(160,214)">
+    <path transform="rotate(-66) scale(0.88)"
+      d="M0,0 C-18,-10 -22,-36 -12,-64 C-6,-80 6,-80 12,-64 C22,-36 18,-10 0,0 Z" fill="#E11B22"/>
+    <path transform="rotate(66) scale(0.88)"
+      d="M0,0 C-18,-10 -22,-36 -12,-64 C-6,-80 6,-80 12,-64 C22,-36 18,-10 0,0 Z" fill="#111111"/>
+    <path transform="rotate(-34)"
+      d="M0,0 C-18,-10 -22,-36 -12,-64 C-6,-80 6,-80 12,-64 C22,-36 18,-10 0,0 Z" fill="#1E7B3E"/>
+    <path transform="rotate(34)"
+      d="M0,0 C-18,-10 -22,-36 -12,-64 C-6,-80 6,-80 12,-64 C22,-36 18,-10 0,0 Z" fill="#C8972F"/>
+    <path transform="scale(0.82,1.12)"
+      d="M0,0 C-18,-10 -22,-36 -12,-64 C-6,-80 6,-80 12,-64 C22,-36 18,-10 0,0 Z" fill="#1B237E"/>
+  </g>
+
+  <g fill="#111111">
+    <g transform="translate(126,120) rotate(-10)">
+      <path d="M-21,2 C-21,-24 -9,-32 0,-32 C9,-32 21,-24 21,2 L11,2 C11,-16 5,-22 0,-22 C-5,-22 -11,-16 -11,2 Z"/>
+      <circle cx="0" cy="-40" r="11"/>
+      <path d="M-9,-44 Q-9,-60 0,-60 Q9,-60 9,-44 Z"/>
+      <ellipse cx="0" cy="-45" rx="19" ry="5"/>
+    </g>
+    <g transform="translate(160,108)">
+      <path d="M-22,2 C-22,-26 -9,-34 0,-34 C9,-34 22,-26 22,2 L11,2 C11,-17 5,-24 0,-24 C-5,-24 -11,-17 -11,2 Z"/>
+      <circle cx="0" cy="-42" r="12"/>
+      <path d="M-10,-47 Q-10,-64 0,-64 Q10,-64 10,-47 Z"/>
+      <ellipse cx="0" cy="-47" rx="21" ry="5.4"/>
+    </g>
+    <g transform="translate(194,120) rotate(10)">
+      <path d="M-21,2 C-21,-24 -9,-32 0,-32 C9,-32 21,-24 21,2 L11,2 C11,-16 5,-22 0,-22 C-5,-22 -11,-16 -11,2 Z"/>
+      <circle cx="0" cy="-40" r="11"/>
+      <path d="M-9,-44 Q-9,-60 0,-60 Q9,-60 9,-44 Z"/>
+      <ellipse cx="0" cy="-45" rx="19" ry="5"/>
+    </g>
+  </g>
+</svg>
