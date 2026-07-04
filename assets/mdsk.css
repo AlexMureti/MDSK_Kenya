@@ -554,6 +554,14 @@ body.hc .utility {
   object-position: 34% 42%;
 }
 
+.page-hero img.image-focus-ksl {
+  object-position: 38% 14%;
+}
+
+.page-hero img.image-focus-ksl-left {
+  object-position: 34% 12%;
+}
+
 :is(.hero, .page-hero, .feature-photo, .photo-card, .event, .media-panel, .leader-card) img.image-focus-group {
   object-position: 50% 30%;
 }
