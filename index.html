@@ -116,18 +116,18 @@
     <section id="guide" class="section guide-band" aria-labelledby="guide-title">
       <div class="container guide-layout">
         <div class="guide-copy">
-          <span class="eyebrow">AI-ready access navigator</span>
-          <h2 id="guide-title">Ask once. Find the right MDSK pathway.</h2>
-          <p>The MDSK Guide helps visitors choose the next step without digging through pages. It answers common questions locally today and can connect to a reviewed AI endpoint when MDSK is ready.</p>
+          <span class="eyebrow">MDSK support navigator</span>
+          <h2 id="guide-title">Find the right route without repeating your story.</h2>
+          <p>The MDSK Guide helps visitors choose a pathway, ask a short question, or move straight to human contact. It uses reviewed site information today and can be upgraded to a reviewed AI assistant when MDSK is ready.</p>
           <div class="guide-privacy">
-            <strong>Privacy-first by design</strong>
-            <p>No account, no tracking, no sensitive form capture. Questions about GBV, SRHR, HIV, mental health, or safety stay in the local guide until a reviewed support backend exists.</p>
+            <strong>Built for trust and handoff</strong>
+            <p>No account required. No sensitive disclosure needed. If the issue involves safety, GBV, SRHR, HIV, mental health, or private support, the guide points visitors to direct MDSK channels.</p>
           </div>
           <div class="guide-prompts" aria-label="Common MDSK guide paths">
-            <button class="guide-prompt" type="button" data-guide-prompt="I want to join MDSK">I want to join MDSK</button>
+            <button class="guide-prompt" type="button" data-guide-prompt="I want to join MDSK">Join MDSK</button>
             <button class="guide-prompt" type="button" data-guide-prompt="How do I donate by M-Pesa?">Donate by M-Pesa</button>
-            <button class="guide-prompt" type="button" data-guide-prompt="I am a caregiver and need support">Caregiver support</button>
-            <button class="guide-prompt" type="button" data-guide-prompt="My organization wants to partner with MDSK">Partner with MDSK</button>
+            <button class="guide-prompt" type="button" data-guide-prompt="I am a caregiver and need support">Caregiver pathway</button>
+            <button class="guide-prompt" type="button" data-guide-prompt="My organization wants to partner with MDSK">Partnership route</button>
           </div>
         </div>
 
@@ -137,27 +137,28 @@
               <img src="brand/logo/mdsk-emblem.svg" width="44" height="40" alt="" />
               <div>
                 <strong>MDSK Guide</strong>
-                <span>Local answers, future AI endpoint ready</span>
+                <span>Reviewed pathways, human handoff</span>
               </div>
             </div>
-            <span class="guide-status">Private mode</span>
+            <span class="guide-status">No login</span>
           </div>
           <div class="guide-messages" id="guideMessages" aria-live="polite" aria-relevant="additions">
-            <div class="guide-message bot">Karibu. I can help with membership, donations, caregiver support, events, partnerships, accessibility, and MDSK contact details. I am not an emergency, medical, or legal service.</div>
+            <div class="guide-message bot">Karibu. Choose a pathway or ask a question. I can point you to membership, donations, caregiver support, events, access, partnerships, and MDSK contact routes.</div>
           </div>
           <div class="guide-quick" aria-label="Quick questions">
             <button class="guide-chip" type="button" data-guide-prompt="What does MDSK do?">What does MDSK do?</button>
-            <button class="guide-chip" type="button" data-guide-prompt="How can I reach MDSK?">Contact</button>
-            <button class="guide-chip" type="button" data-guide-prompt="Tell me about KSL and Easy Read access">Access features</button>
-            <button class="guide-chip" type="button" data-guide-prompt="I need GBV, SRHR, HIV, or mental health support">Sensitive support</button>
+            <button class="guide-chip" type="button" data-guide-prompt="How can I reach MDSK?">Reach MDSK</button>
+            <button class="guide-chip" type="button" data-guide-prompt="Tell me about KSL and Easy Read access">Access and KSL</button>
+            <button class="guide-chip" type="button" data-guide-prompt="I need GBV, SRHR, HIV, or mental health support">Private support route</button>
           </div>
           <form class="guide-form" id="guideForm" aria-label="MDSK Guide form">
             <label class="sr-only" for="guideInput">Ask MDSK Guide</label>
-            <input class="guide-input" id="guideInput" type="text" autocomplete="off" placeholder="Ask about joining, donating, access, events, or support" />
+            <input class="guide-input" id="guideInput" type="text" autocomplete="off" placeholder="Type a question or choose a pathway" />
             <button class="guide-send" type="submit" aria-label="Send question">
               <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14" /><path d="m13 6 6 6-6 6" /></svg>
             </button>
           </form>
+          <p class="guide-note">For urgent, medical, legal, or private safety matters, use direct support channels rather than sharing details in the guide.</p>
         </section>
       </div>
     </section>

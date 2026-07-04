@@ -1026,6 +1026,16 @@ body.hc .utility {
   background: #ffffff;
 }
 
+.guide-panel .guide-note {
+  max-width: none;
+  padding: 0 18px 16px;
+  background: #ffffff;
+  color: #44506a;
+  font-size: 0.92rem;
+  font-weight: 650;
+  line-height: 1.35;
+}
+
 .guide-input {
   width: 100%;
   min-height: 48px;
@@ -1074,6 +1084,7 @@ body.hc .guide-panel-head,
 body.hc .guide-messages,
 body.hc .guide-quick,
 body.hc .guide-form,
+body.hc .guide-note,
 body.hc .guide-message.bot,
 body.hc .guide-chip,
 body.hc .guide-input {

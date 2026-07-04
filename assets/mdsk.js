@@ -98,8 +98,12 @@ function localGuideAnswer(question) {
   const contact = '<a href="contact.html">contact MDSK</a>';
   const donate = '<a href="donate.html">donation details</a>';
 
+  if (/^(hi|hello|hey|karibu|sasa|niaje)\b/.test(text)) {
+    return `Karibu. You can ask about joining MDSK, donating by M-Pesa, caregiver support, events, accessibility, partnerships, or direct contact details. Choose one of the quick routes below or type your question.`;
+  }
+
   if (/gbv|violence|abuse|assault|rape|hiv|srhr|mental|suicide|self-harm|danger|emergency|crisis|psychosocial/.test(text)) {
-    return `If someone is in immediate danger, use local emergency or trusted support channels now. The Quick exit button is at the top of this page. This guide does not store sensitive details and is not a medical, legal, or emergency service. For disability-responsive referrals, ${contact} when it is safe.`;
+    return `For private or urgent support, avoid sharing personal details in this guide. If someone is in immediate danger, use trusted local emergency channels now. The Quick exit button is at the top of this page. For disability-responsive referrals or MDSK follow-up, ${contact} when it is safe.`;
   }
 
   if (/donat|mpesa|m-pesa|paybill|give|fund/.test(text)) {
@@ -115,11 +119,11 @@ function localGuideAnswer(question) {
   }
 
   if (/partner|organization|institution|ngo|government|donor|media|press/.test(text)) {
-    return `Partnerships are central to MDSK's model. Strong fits include health access, GBV/SRHR/HIV response, livelihoods, accessibility, caregiver support, media, research, and inclusive employment. Start through ${contact}.`;
+    return `MDSK partnership routes include health access, GBV/SRHR/HIV response, livelihoods, accessibility, caregiver dignity, media, research, and inclusive employment. Start with ${contact}; include the organization name, proposed support area, timeline, and lead contact person.`;
   }
 
   if (/ksl|sign|language|easy|read|swahili|kiswahili|accessib|contrast|font/.test(text)) {
-    return `This site is structured for Kiswahili, Easy Read, high contrast, larger text, keyboard navigation, and future Kenyan Sign Language videos. The accessibility controls are at the top of the page.`;
+    return `MDSK's access pathway includes Kiswahili structure, Easy Read support, high contrast, larger text, keyboard navigation, and space for future Kenyan Sign Language videos. The display controls are at the top of the page, and access issues can go through ${contact}.`;
   }
 
   if (/event|conference|world aids|men'?s day|summit|afralti|kise/.test(text)) {
@@ -134,7 +138,7 @@ function localGuideAnswer(question) {
     return `MDSK advances rights, health, psychosocial wellbeing, inclusive education, livelihoods, leadership, caregiving support, and partnerships for boys and men with disabilities and their caregivers across Kenya.`;
   }
 
-  return `I can help with membership, donations, caregiver support, partnerships, accessibility, events, and contact details. For anything personal or urgent, ${contact} directly so a human team member can respond.`;
+  return `I can help you find the right MDSK route: membership, donations, caregiver support, partnerships, accessibility, events, or contact details. For personal follow-up, ${contact} directly so a team member can respond.`;
 }
 
 async function askGuide(question) {
@@ -145,7 +149,7 @@ async function askGuide(question) {
   if (guideInput) {
     guideInput.value = "";
   }
-  const pending = guideMessage("Checking the MDSK Guide...", "bot");
+  const pending = guideMessage("Finding the best MDSK route...", "bot");
   if (!pending) return;
   const sensitive = guideSensitivePattern.test(clean);
 
