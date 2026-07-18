@@ -320,8 +320,8 @@ const pages = [
           <p>The strongest images are documentary rather than promotional. They show meetings, microphones, KSL interpretation, public health advocacy, members in red hats, and partner spaces where decisions are shaped.</p>
         </div>
         <aside class="statement">
-          <strong>Media standard</strong>
-          <p>Use real MDSK imagery, preserve consent, write useful captions, and provide transcripts or captions before publishing video with speech.</p>
+          <strong>For journalists and partners</strong>
+          <p>MDSK can help coordinate interviews, event photos, captions, and responsible public storytelling around disability inclusion.</p>
           <strong>Press contact</strong>
           <p>Email info@menwdsocietyk.org or call +254 739 000 171 for interviews, photos, event coordination, and partner visibility.</p>
         </aside>
@@ -357,6 +357,26 @@ const pages = [
           <figure class="media-story">
             <picture><source srcset="assets/optimized/boardroom-team-celebration-1000.webp" type="image/webp" /><img class="image-focus-boardroom" src="assets/optimized/boardroom-team-celebration-1000.webp" width="1000" height="666" loading="lazy" alt="MDSK members celebrating around a boardroom table with branded hats visible" /></picture>
             <figcaption><strong>Governance</strong><span>Advocacy also happens in planning rooms.</span></figcaption>
+          </figure>
+          <figure class="media-story">
+            <picture><source srcset="assets/optimized/caregiver-dignity-supplies-1100.webp" type="image/webp" /><img class="image-focus-caregiver" src="assets/optimized/caregiver-dignity-supplies-1100.webp" width="1100" height="828" loading="lazy" alt="MDSK and partner teams hold dignity supplies during a caregiver support handover" /></picture>
+            <figcaption><strong>Caregiver dignity</strong><span>Practical support is part of inclusion.</span></figcaption>
+          </figure>
+          <figure class="media-story">
+            <picture><source srcset="assets/optimized/caregiver-dignity-handover-1100.webp" type="image/webp" /><img class="image-focus-caregiver-handover" src="assets/optimized/caregiver-dignity-handover-1100.webp" width="1100" height="828" loading="lazy" alt="A partner hands dignity supplies to an MDSK representative during a caregiver support event" /></picture>
+            <figcaption><strong>Direct handover</strong><span>Support reaches members through organized partner action.</span></figcaption>
+          </figure>
+          <figure class="media-story">
+            <picture><source srcset="assets/optimized/caregiver-dignity-media-room-1100.webp" type="image/webp" /><img class="image-focus-caregiver-room" src="assets/optimized/caregiver-dignity-media-room-1100.webp" width="1100" height="828" loading="lazy" alt="Caregiver support partners address media and community members during a dignity supplies event" /></picture>
+            <figcaption><strong>Public handoff</strong><span>Support work documented with partners and community present.</span></figcaption>
+          </figure>
+          <figure class="media-story">
+            <picture><source srcset="assets/optimized/conference-audience-question-900.webp" type="image/webp" /><img class="image-focus-audience" src="assets/optimized/conference-audience-question-900.webp" width="900" height="599" loading="lazy" alt="A participant speaks into a microphone during an inclusive health and advocacy forum" /></picture>
+            <figcaption><strong>Room participation</strong><span>Public forums work when members and partners can speak into the record.</span></figcaption>
+          </figure>
+          <figure class="media-story">
+            <picture><source srcset="assets/optimized/community-cake-celebration-1100.webp" type="image/webp" /><img class="image-focus-community" src="assets/optimized/community-cake-celebration-1100.webp" width="1100" height="732" loading="lazy" alt="MDSK members and families gather around a cake during a community celebration" /></picture>
+            <figcaption><strong>Community belonging</strong><span>Public dignity includes ordinary moments of joy.</span></figcaption>
           </figure>
         </div>
       </div>
@@ -462,9 +482,32 @@ const pages = [
       </div>
     </section>
     <section class="section work-band">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Where support shows up</span>
+          <h2>Caregiver dignity is practical, visible, and shared.</h2>
+          <p>Donations help move support from intention into real rooms: dignity supplies, partner handovers, caregiver engagement, and public accountability around household-level barriers.</p>
+        </div>
+        <div class="media-story-grid donation-proof-grid">
+          <figure class="media-story large">
+            <picture><source srcset="assets/optimized/caregiver-dignity-supplies-1100.webp" type="image/webp" /><img class="image-focus-caregiver" src="assets/optimized/caregiver-dignity-supplies-1100.webp" width="1100" height="828" loading="lazy" alt="MDSK and partner teams hold dignity supplies during a caregiver support handover" /></picture>
+            <figcaption><strong>Dignity supplies</strong><span>Caregiver support becomes visible through practical household resources.</span></figcaption>
+          </figure>
+          <figure class="media-story">
+            <picture><source srcset="assets/optimized/caregiver-dignity-handover-1100.webp" type="image/webp" /><img class="image-focus-caregiver-handover" src="assets/optimized/caregiver-dignity-handover-1100.webp" width="1100" height="828" loading="lazy" alt="A partner hands dignity supplies to an MDSK representative during a caregiver support event" /></picture>
+            <figcaption><strong>Partner handover</strong><span>Support reaches members through organized partner action.</span></figcaption>
+          </figure>
+          <figure class="media-story">
+            <picture><source srcset="assets/optimized/caregiver-dignity-media-room-1100.webp" type="image/webp" /><img class="image-focus-caregiver-room" src="assets/optimized/caregiver-dignity-media-room-1100.webp" width="1100" height="828" loading="lazy" alt="Caregiver support partners address media and community members during a dignity supplies event" /></picture>
+            <figcaption><strong>Public accountability</strong><span>Media presence keeps caregiver dignity in the public conversation.</span></figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+    <section class="section">
       <div class="container content-grid">
         <article class="content-panel"><h3>Institutional giving</h3><p>Organizations can support targeted programs, events, accessibility production, caregiver dignity campaigns, health inclusion, research, or member leadership. Email MDSK to align the donation with the right program pathway.</p>${button("Email MDSK", "mailto:info@menwdsocietyk.org", "primary")}</article>
-        <article class="content-panel"><h3>Donation care</h3><p>MDSK's site should never pressure a person in crisis to disclose private details. For personal safety, health, GBV, SRHR, HIV, mental health, or urgent support issues, contact MDSK directly when it is safe.</p>${button("Contact MDSK", "contact.html", "secondary")}</article>
+        <article class="content-panel"><h3>Private support questions</h3><p>For personal safety, health, GBV, SRHR, HIV, mental health, or urgent support issues, contact MDSK directly when it is safe instead of sharing private details through general forms.</p>${button("Contact MDSK", "contact.html", "secondary")}</article>
       </div>
     </section>`
   },
