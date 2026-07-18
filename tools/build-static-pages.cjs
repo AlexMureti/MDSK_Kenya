@@ -364,14 +364,14 @@ const pages = [
     <section class="section">
       <div class="container media-standards">
         <div>
-          <span class="eyebrow">When video arrives</span>
-          <h2>Publish video only when the access layer is ready.</h2>
-          <p>Video can make MDSK feel immediate, but speech-heavy clips need captions or transcripts. Where Kenyan Sign Language is part of the event, that visibility should be preserved rather than cropped away.</p>
+          <span class="eyebrow">Media requests</span>
+          <h2>Bring disability inclusion into the public record.</h2>
+          <p>MDSK can support interviews, event coverage, partner visibility, and responsible storytelling about rights, health access, caregiving, livelihoods, and leadership for men and boys with disabilities in Kenya.</p>
         </div>
         <ul class="feature-list">
-          <li><strong>Caption or transcript</strong><span>Any public clip with speech should have a text alternative before it becomes central content.</span></li>
-          <li><strong>Consent and dignity</strong><span>Avoid vulnerable close-ups unless MDSK has explicit permission and the context is respectful.</span></li>
-          <li><strong>Performance</strong><span>Use compressed clips, posters, and user-initiated playback rather than heavy autoplay.</span></li>
+          <li><strong>Interviews</strong><span>Speak with MDSK leadership and members about access, rights, stigma, caregiving, health systems, and public participation.</span></li>
+          <li><strong>Event coverage</strong><span>Document forums, walks, partner meetings, KSL-supported sessions, and national advocacy moments where inclusion is being shaped.</span></li>
+          <li><strong>Partnership visibility</strong><span>Coordinate photos, captions, and public updates that show the work clearly and respectfully.</span></li>
         </ul>
       </div>
     </section>`
