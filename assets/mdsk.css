@@ -569,6 +569,10 @@ body.hc .utility {
   object-position: 38% 42%;
 }
 
+.feature-photo img.image-focus-ksl {
+  object-position: 24% 42%;
+}
+
 :is(.hero, .page-hero, .feature-photo, .photo-card, .event, .media-panel, .leader-card) img.image-focus-ksl-left {
   object-position: 34% 42%;
 }
@@ -1397,26 +1401,42 @@ body.hc .guide-status {
   box-shadow: var(--shadow);
 }
 
+.feature-photo {
+  position: relative;
+  min-height: 620px;
+  background: var(--ink);
+}
+
 .feature-photo picture,
 .photo-card picture {
   display: block;
+  overflow: hidden;
   background: #dbe4f0;
+}
+
+.feature-photo picture {
+  height: 100%;
+  min-height: 620px;
+}
+
+.photo-card picture {
+  aspect-ratio: 4 / 3;
+}
+
+.portrait-card picture {
+  aspect-ratio: 4 / 5;
 }
 
 .feature-photo img {
   width: 100%;
-  aspect-ratio: 16 / 10;
+  height: 100%;
   object-fit: cover;
 }
 
 .photo-card img {
   width: 100%;
-  aspect-ratio: 4 / 3;
+  height: 100%;
   object-fit: cover;
-}
-
-.portrait-card img {
-  aspect-ratio: 4 / 5;
 }
 
 figcaption {
@@ -1424,6 +1444,17 @@ figcaption {
   color: var(--muted);
   font-size: 0.98rem;
   font-weight: 600;
+}
+
+.feature-photo figcaption {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 18px 20px 20px;
+  color: #ffffff;
+  background: linear-gradient(0deg, rgba(11, 18, 32, 0.92), rgba(11, 18, 32, 0));
+  font-weight: 750;
 }
 
 figure {
@@ -1785,6 +1816,11 @@ figure {
     grid-row: auto;
     min-height: 320px;
   }
+
+  .feature-photo,
+  .feature-photo picture {
+    min-height: 460px;
+  }
 }
 
 @media (max-width: 640px) {
@@ -1880,6 +1916,11 @@ figure {
   .media-story.tall {
     grid-column: auto;
     min-height: 320px;
+  }
+
+  .feature-photo,
+  .feature-photo picture {
+    min-height: 340px;
   }
 
   .proof-item,

@@ -472,10 +472,10 @@ const pages = [
     file: "accessibility.html",
     current: "access",
     title: "Accessibility - MDSK",
-    description: "MDSK accessibility statement covering keyboard navigation, high contrast, readable mode, Kiswahili, Easy Read, Kenyan Sign Language placeholders, and quick exit.",
+    description: "MDSK access information covering keyboard navigation, readable display controls, Kiswahili, Easy Read, Kenyan Sign Language access, and quick exit.",
     eyebrow: "Accessibility",
     heading: "Access is not a feature. It is the standard.",
-    intro: "This site is designed for fast loading, keyboard use, readable content, high contrast, reduced motion, future KSL video summaries, Kiswahili architecture, and trauma-informed quick-exit patterns.",
+    intro: "MDSK's website is built to be fast, readable, keyboard-friendly, and easier to leave quickly when a visitor is viewing sensitive information.",
     heroImage: {
       webp: "assets/optimized/hiv-cane-interpreter-900.webp",
       fallback: "assets/optimized/hiv-cane-interpreter-900.webp",
@@ -487,22 +487,22 @@ const pages = [
     actions: `${button("Use MDSK Guide", "index.html#guide", "gold")}${button("Report an access issue", "contact.html", "secondary")}`,
     content: `<section class="section">
       <div class="container content-grid">
-        <article class="content-panel"><h3>Current access features</h3><ul class="feature-list"><li><strong>Keyboard navigation</strong><span>Skip link, semantic landmarks, visible focus, and no drag-only interactions.</span></li><li><strong>Readable display controls</strong><span>Text-size controls, high contrast, readable mode, and strong line-height defaults.</span></li><li><strong>Reduced motion</strong><span>Motion respects user preferences and avoids aggressive parallax or auto-zoom effects.</span></li><li><strong>Data-frugal imagery</strong><span>Optimized WebP assets reduce load for mobile visitors.</span></li></ul></article>
-        <article class="content-panel"><h3>Language and format roadmap</h3><ul class="feature-list"><li><strong>Kiswahili</strong><span>The site architecture supports bilingual English and Kiswahili content.</span></li><li><strong>Easy Read</strong><span>Plain-language routes help visitors understand the same mission with lower cognitive load.</span></li><li><strong>Kenyan Sign Language</strong><span>Key pages are ready for KSL video summaries once clips are supplied.</span></li><li><strong>Guide support</strong><span>The MDSK Guide keeps common questions local and avoids sensitive data capture.</span></li></ul></article>
+        <article class="content-panel"><h3>Use the site your way</h3><ul class="feature-list"><li><strong>Keyboard navigation</strong><span>Move through pages with a keyboard, visible focus, and a skip link to main content.</span></li><li><strong>Readable controls</strong><span>Increase text size, switch to high contrast, or use readable mode from the top bar.</span></li><li><strong>Reduced motion</strong><span>The site respects reduced-motion preferences and keeps movement restrained.</span></li><li><strong>Lower data load</strong><span>Images are compressed so pages remain practical on mobile connections.</span></li></ul></article>
+        <article class="content-panel"><h3>Language and communication</h3><ul class="feature-list"><li><strong>Kiswahili</strong><span>Kiswahili routes help more visitors understand MDSK's mission and contact options.</span></li><li><strong>Easy Read</strong><span>Plain-language summaries make key information easier to scan and understand.</span></li><li><strong>Kenyan Sign Language</strong><span>MDSK highlights KSL access at events and can add KSL summaries as public clips become available.</span></li><li><strong>Direct help</strong><span>Visitors who meet a barrier can contact MDSK so a human team member can respond.</span></li></ul></article>
       </div>
     </section>
     <section class="section work-band">
       <div class="container split">
         <div class="copy-stack">
           <span class="eyebrow">Sensitive pathways</span>
-          <h2>Trauma-informed access for GBV, SRHR, HIV, mental health, and safety questions.</h2>
-          <p>Sensitive pages and guide responses should keep data collection minimal, avoid tracking personal disclosures, and keep the quick-exit control visible. The guide is not an emergency, medical, or legal service.</p>
+          <h2>A safer route for personal health, safety, and support questions.</h2>
+          <p>For GBV, SRHR, HIV, mental health, safety, or private support questions, visitors can use direct MDSK contact routes instead of sharing personal details in the guide.</p>
         </div>
         <aside class="statement">
           <strong>Quick exit</strong>
-          <p>The quick-exit button sends the visitor away from the site immediately. It is visible in the utility bar on every page.</p>
+          <p>The quick-exit button sends the visitor away from the site immediately. It appears in the top bar on every page.</p>
           <strong>Access issue?</strong>
-          <p>Email info@menwdsocietyk.org with the page, device, browser, and barrier encountered.</p>
+          <p>Email info@menwdsocietyk.org and describe the page, device, browser, and barrier encountered.</p>
         </aside>
       </div>
     </section>`
