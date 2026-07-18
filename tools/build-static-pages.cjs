@@ -6,6 +6,7 @@ const navItems = [
   ["about", "About", "about.html"],
   ["programs", "Programs", "programs.html"],
   ["events", "Events", "events.html"],
+  ["media", "Media", "media.html"],
   ["partners", "Partners", "partners.html"],
   ["donate", "Donate", "donate.html"],
   ["access", "Access", "accessibility.html"],
@@ -290,6 +291,88 @@ const pages = [
       <div class="container content-grid">
         <article class="content-panel"><h3>What makes an MDSK event credible</h3><ul class="feature-list"><li><strong>KSL and access visibility</strong><span>Interpreters and inclusive participation should be visible where possible.</span></li><li><strong>Member voice</strong><span>Men with disabilities and caregivers shape the platform, not just attend it.</span></li><li><strong>Partner accountability</strong><span>Government, OPDs, health actors, and CSOs leave with concrete next steps.</span></li></ul></article>
         <article class="content-panel"><h3>Event opportunities</h3><p>MDSK can collaborate on conferences, policy roundtables, health inclusion forums, disability data conversations, media briefings, caregiver dignity campaigns, and community outreach.</p><div class="hero-actions">${button("Discuss an event", "contact.html", "primary")}</div></article>
+      </div>
+    </section>`
+  },
+  {
+    file: "media.html",
+    current: "media",
+    title: "Media - MDSK",
+    description: "MDSK media, press, events, and documentary proof of disability inclusion work in Kenya.",
+    eyebrow: "Media and visibility",
+    heading: "Proof belongs in public view.",
+    intro: "MDSK's media presence is not decoration. It shows members in advocacy rooms, public health forums, press engagements, partner spaces, and street-level inclusion work across Kenya.",
+    heroImage: {
+      webp: "assets/optimized/press-conference-row-1100.webp",
+      fallback: "assets/optimized/press-conference-row-1100.webp",
+      width: "1100",
+      height: "732",
+      alt: "MDSK members in branded hats seated at a press conference table with microphones",
+      className: "image-focus-press"
+    },
+    actions: `${button("Contact media team", "contact.html", "gold")}${button("See events", "events.html", "secondary")}`,
+    content: `<section class="section">
+      <div class="container split">
+        <div class="copy-stack">
+          <span class="eyebrow">Public record</span>
+          <h2>The work becomes harder to ignore when people can see it.</h2>
+          <p>Media gives MDSK a public record: who was in the room, which systems were engaged, what access looked like, and how disability inclusion moved from private struggle into civic conversation.</p>
+          <p>The strongest images are documentary rather than promotional. They show meetings, microphones, KSL interpretation, public health advocacy, members in red hats, and partner spaces where decisions are shaped.</p>
+        </div>
+        <aside class="statement">
+          <strong>Media standard</strong>
+          <p>Use real MDSK imagery, preserve consent, write useful captions, and provide transcripts or captions before publishing video with speech.</p>
+          <strong>Press contact</strong>
+          <p>Email info@menwdsocietyk.org or call +254 739 000 171 for interviews, photos, event coordination, and partner visibility.</p>
+        </aside>
+      </div>
+    </section>
+    <section class="section work-band">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Media field notes</span>
+          <h2>Rooms, streets, microphones, and access.</h2>
+        </div>
+        <div class="media-story-grid">
+          <figure class="media-story large">
+            <picture><source srcset="assets/optimized/press-conference-statement-1100.webp" type="image/webp" /><img class="image-focus-press" src="assets/optimized/press-conference-statement-1100.webp" width="1100" height="732" loading="lazy" alt="MDSK chairperson and members in branded hats address microphones at a press briefing" /></picture>
+            <figcaption><strong>Press table</strong><span>Members visible as civic actors, not passive subjects.</span></figcaption>
+          </figure>
+          <figure class="media-story">
+            <picture><source srcset="assets/optimized/hiv-crutch-podium-900.webp" type="image/webp" /><img class="image-focus-podium" src="assets/optimized/hiv-crutch-podium-900.webp" width="900" height="599" loading="lazy" alt="A speaker using a crutch addresses a disability-inclusive health and HIV response forum" /></picture>
+            <figcaption><strong>Health access</strong><span>HIV response and disability inclusion in the same room.</span></figcaption>
+          </figure>
+          <figure class="media-story">
+            <picture><source srcset="assets/optimized/members-candid-red-hats-900.webp" type="image/webp" /><img class="image-focus-members" src="assets/optimized/members-candid-red-hats-900.webp" width="900" height="599" loading="lazy" alt="MDSK members in red hats and branded shirts speaking during an advocacy meeting" /></picture>
+            <figcaption><strong>Member voice</strong><span>The hats mark solidarity and public presence.</span></figcaption>
+          </figure>
+          <figure class="media-story tall">
+            <picture><source srcset="assets/optimized/world-aids-day-walk-900.webp" type="image/webp" /><img class="image-focus-walk" src="assets/optimized/world-aids-day-walk-900.webp" width="677" height="900" loading="lazy" alt="MDSK members walking together during World AIDS Day public advocacy" /></picture>
+            <figcaption><strong>Street visibility</strong><span>Public health advocacy leaves the conference room.</span></figcaption>
+          </figure>
+          <figure class="media-story">
+            <picture><source srcset="assets/optimized/health-integration-summit-1000.webp" type="image/webp" /><img class="image-focus-summit" src="assets/optimized/health-integration-summit-1000.webp" width="1000" height="666" loading="lazy" alt="MDSK representatives standing beside a Health Integration Summit 2026 sign" /></picture>
+            <figcaption><strong>Partner spaces</strong><span>Health systems need disability voice at the table.</span></figcaption>
+          </figure>
+          <figure class="media-story">
+            <picture><source srcset="assets/optimized/boardroom-team-celebration-1000.webp" type="image/webp" /><img class="image-focus-boardroom" src="assets/optimized/boardroom-team-celebration-1000.webp" width="1000" height="666" loading="lazy" alt="MDSK members celebrating around a boardroom table with branded hats visible" /></picture>
+            <figcaption><strong>Governance</strong><span>Advocacy also happens in planning rooms.</span></figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+    <section class="section">
+      <div class="container media-standards">
+        <div>
+          <span class="eyebrow">When video arrives</span>
+          <h2>Publish video only when the access layer is ready.</h2>
+          <p>Video can make MDSK feel immediate, but speech-heavy clips need captions or transcripts. Where Kenyan Sign Language is part of the event, that visibility should be preserved rather than cropped away.</p>
+        </div>
+        <ul class="feature-list">
+          <li><strong>Caption or transcript</strong><span>Any public clip with speech should have a text alternative before it becomes central content.</span></li>
+          <li><strong>Consent and dignity</strong><span>Avoid vulnerable close-ups unless MDSK has explicit permission and the context is respectful.</span></li>
+          <li><strong>Performance</strong><span>Use compressed clips, posters, and user-initiated playback rather than heavy autoplay.</span></li>
+        </ul>
       </div>
     </section>`
   },

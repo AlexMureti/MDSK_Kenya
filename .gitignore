@@ -5,6 +5,7 @@ _PROJECT_BRIEF.md
 design-system/
 brand/DESIGN_SYSTEM.md
 tools/node_modules/
+__pycache__/
 tools/emblem-preview.png
 assets/preview-server*.log
 *.log
